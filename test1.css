@@ -1,0 +1,28 @@
+ul {
+    list-style: none;
+  }
+  
+  ul li {
+    padding-bottom: 40px;
+    position:relative
+  }
+  
+  ul li span {
+    list-style-type: circle; 
+    color: #C1C1C1;
+  }
+  ul li span:before{
+    content:'';
+    position:absolute;
+    border-left:1px solid ;
+    bottom:0;
+    z-index:-1;
+    height:100%
+  }
+  
+  ul li:last-child span:before{
+   content:none;
+  }
+  ul li:last-child{
+    padding-bottom:0
+  }
