@@ -110,11 +110,16 @@ h1{
 .row-info {
     display: flex;
     align-items: center;
+    padding: 0 0 0 40px;
 }
 .image-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10px 0 0;
+}
+#img-info {
+    padding: 0 10px 0 0;
 }
 .number-info img {
     border-radius: 50%;
@@ -132,9 +137,14 @@ h1{
     margin-left: 5px;
 
 }
+.info-1 p {
+    padding: 0 0 0 40px;
+}
+
 .info-5-1 {
     display: inline-flex;
     align-items: flex-start;
+    padding: 0 0 0 40px;
 } 
 .info-5-1 p {
     margin-right: 10px;
@@ -142,22 +152,56 @@ h1{
     padding: 4px;
 }  
 /* TEST */
-.one {
-    list-style-type: circle; 
+ul {
+    margin: 0 auto;
+    list-style-type: none;
+    counter-reset: circle;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  ul li {
+    padding: 0 0 25px 25px;
+    position: relative;
+    margin: 0;
     color: #C1C1C1;
-    padding-bottom: 15px;
-}
-.list p {
-    color: #333;
-}
-.list-item::before {
-    display: block;
-    content: "";
+  }
+  li p {
+    color: black;
+    margin: 12px 0;
+  }
+  li h6 {
+    margin: 0;
+  }
+  li a {
+    text-decoration: none;
+    color: #5EB4E5;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  ul li:after {
     position: absolute;
-    background-color: red;
-    width: 1px;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 1px solid #C1C1C1;
+    border-radius: 50%;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    text-align: center;
+    line-height: 5px;
+    background: #fff;
+  }
+  ul li:before {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    content: "";
     height: 100%;
-}
-.list li {
-    padding: 0px;
-}
+    width: 0;
+    border-left: 1px solid #C1C1C1;
+  }
+  ul li:last-of-type:before {
+    border: none;
+  }
