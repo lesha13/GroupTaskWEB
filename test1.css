@@ -51,3 +51,23 @@ ul li:before {
 ul li:last-of-type:before {
   border: none;
 }
+.grid_info {
+  display: grid;
+  grid-template-areas: 
+    "el1 img1"
+    "el1 img2";
+}
+.el1 {
+  grid-area: el1;
+}
+.img1 {
+  text-align: end;
+  grid-area: img1;
+  margin: 20px;
+}
+.img2 {
+  
+  text-align: end;
+  grid-area: img2;
+  margin: 20px;
+}
