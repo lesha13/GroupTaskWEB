@@ -219,34 +219,34 @@ h1{
     padding: 4px;
 }  
 /* TEST */
-ul {
+#body-2 ul {
     margin: 0 auto;
     list-style-type: none;
     counter-reset: circle;
     margin: 0;
     font-family: sans-serif;
-  }
-  ul li {
+}
+#body-2 ul li {
     padding: 0 0 25px 25px;
     position: relative;
     margin: 0;
     color: #C1C1C1;
-  }
-  li p {
+}
+#body-2 li p {
     color: black;
     margin: 12px 0;
-  }
-  li h6 {
+}
+#body-2 li h6 {
     margin: 0;
-  }
-  li a {
+}
+#body-2 li a {
     text-decoration: none;
     color: #5EB4E5;
-  }
-  li a:hover {
+}
+#body-2 li a:hover {
     text-decoration: underline;
-  }
-  ul li:after {
+}
+#body-2 ul li:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -259,8 +259,8 @@ ul {
     text-align: center;
     line-height: 5px;
     background: #fff;
-  }
-  ul li:before {
+}
+#body-2 ul li:before {
     position: absolute;
     left: 3px;
     top: 0;
@@ -268,28 +268,28 @@ ul {
     height: 100%;
     width: 0;
     border-left: 1px solid #C1C1C1;
-  }
-  ul li:last-of-type:before {
+}
+#body-2 ul li:last-of-type:before {
     border: none;
-  }
-  .grid_info {
+}
+.grid_info {
     display: grid;
     grid-template-areas: 
       "el1 img1"
       "el1 img2";
-  }
-  .el1 {
+}
+.el1 {
     grid-area: el1;
-  }
-  .img1 {
+}
+.img1 {
     text-align: end;
     grid-area: img1;
     margin: 20px;
     padding: 0 10px 0 0 ;
-  }
-  .img2 {
+}
+.img2 {
     text-align: end;
     grid-area: img2;
     margin: 20px;
     padding: 0 25px 0 0 ;
-  }
+}
