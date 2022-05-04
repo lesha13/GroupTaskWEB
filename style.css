@@ -77,3 +77,152 @@ h1{
     margin-top: 5px;
     color: #C1C1C1;
 }
+
+
+
+/*Mark*/
+.containers-info {
+    font-style: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}     
+.containers-info h2 img {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#p1 {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 9px;
+    margin-right: 22px;
+}
+.number-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.row-info {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 40px;
+}
+.image-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+}
+#img-info {
+    padding: 0 10px 0 0;
+}
+.number-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.number-info h6 {
+    border: 1px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    padding: 14px;
+    background-color: #C1C1C1;
+    margin-left: 5px;
+
+}
+.info-1 p {
+    padding: 0 0 0 40px;
+}
+
+.info-5-1 {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 0 0 0 40px;
+} 
+.info-5-1 p {
+    margin-right: 10px;
+    background-color: #C1C1C1;
+    padding: 4px;
+}  
+/* TEST */
+ul {
+    margin: 0 auto;
+    list-style-type: none;
+    counter-reset: circle;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  ul li {
+    padding: 0 0 25px 25px;
+    position: relative;
+    margin: 0;
+    color: #C1C1C1;
+  }
+  li p {
+    color: black;
+    margin: 12px 0;
+  }
+  li h6 {
+    margin: 0;
+  }
+  li a {
+    text-decoration: none;
+    color: #5EB4E5;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  ul li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 1px solid #C1C1C1;
+    border-radius: 50%;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    text-align: center;
+    line-height: 5px;
+    background: #fff;
+  }
+  ul li:before {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 1px solid #C1C1C1;
+  }
+  ul li:last-of-type:before {
+    border: none;
+  }
+  .grid_info {
+    display: grid;
+    grid-template-areas: 
+      "el1 img1"
+      "el1 img2";
+  }
+  .el1 {
+    grid-area: el1;
+  }
+  .img1 {
+    text-align: end;
+    grid-area: img1;
+    margin: 20px;
+    padding: 0 10px 0 0 ;
+  }
+  .img2 {
+    text-align: end;
+    grid-area: img2;
+    margin: 20px;
+    padding: 0 25px 0 0 ;
+  }
