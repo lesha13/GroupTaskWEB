@@ -1,3 +1,5 @@
+/*Nika*/
+
 .grid-area {
   display: grid;
   grid-template-areas: "logo searchm buttons1 buttons2 ava";
@@ -120,6 +122,8 @@ input[type="search"]::-webkit-search-cancel-button {
   border-top: 0.5px solid #dedede;
 }
 
+/* Oleksii */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
@@ -213,7 +217,7 @@ body main {
 }
 
 #body-5-3 p {
-  margin: 0px 25px 10px 25px;
+  margin: 0px 25px 8px 25px;
 }
 
 #body-5-4 p {
@@ -253,10 +257,12 @@ body main {
 
 #body-5 :nth-child(5):hover {
   filter: brightness(0.9);
+  cursor: pointer;
 }
 
 #body-5 :nth-child(6):hover {
   filter: brightness(0.9);
+  cursor: pointer;
 }
 
 #body-5 p,
@@ -266,6 +272,10 @@ body main {
 
 #body-5 :nth-child(3) {
   color: #000000;
+}
+
+#body-5 a {
+  border: 1px solid #ffffff;
 }
 
 #body-5 a:hover {
