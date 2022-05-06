@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GroupTask</title>
+  </head>
+
+  <body>
+    <header class="grid-area">
+            <a href="" class="cell cell-area"> <img width="40" height="40" src=" https://github.com/Andrashko/GroupTask/blob/main/img/logo.png?raw=true" alt=""></a>
+        <div class="cell cell-area  searchga">
+            <form >
+            <input type="search" name="#" placeholder="Search">
+            <button type="submit" class="head"><img width="15" height="15"
+                    src="data:image/png;base64,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"></button>
+        </form>
+        </div>
+            
+        <div class="cell cell-area">
+            <form action=""><button class="button1">Home</button></form>
+            <form action=""> <button class="button1">Profile</button></form>
+            <form action=""><button class="button1">Connections</button></form>
+            <form action=""><button class="button1">Interest</button></form>
+            <form action=""><button class="button1 redbutton">Try Premium</button></form>
+          
+        </div>
+        <div class="cell cell-area ">
+            <form action=""><button class="button2"><img  width="22" src="https://github.com/lesha13/GroupTaskWEB/blob/main/img/icon-1.png?raw=true" alt=""></button></form>
+            <form action=""> <button class="button2"><img  width="22" src="https://github.com/lesha13/GroupTaskWEB/blob/main/img/icon-2.png?raw=true" alt=""></button></form>
+            <form action=""><button class="button2"><img  width="22" src="https://github.com/lesha13/GroupTaskWEB/blob/main/img/icon-3.png?raw=true" alt=""></button></form>
+
+        </div>
+        <a href="" class="cell cell-area"><img width="45" class="avaimg" src="https://github.com/Andrashko/GroupTask/blob/main/img/avatar.jpg?raw=true" alt=""></a>
+
+    </header>
+    <div class="header2">
+        <div class="buttons3">
+            <form action=""><button class="button3 bluebutton">Posts</button></form>
+            <form action=""> <button class="button3">Background</button></form>
+            <form action=""><button class="button3">Recomendations</button></form>
+            <form action=""><button class="button3">Following</button></form>
+        </div>
+   
+    </div>
+
+    <main>
+      <div id="container">
+
+        <div id="body-5">
+          <div id="body-5-1">
+            <img src="img/bill-gates-avatar.png" />
+
+            <h2>Bill Gates</h2>
+            <p>Microsoft Founder</p>
+            <p>Greater Seatle Area</p>
+
+            <button>Follow</button>
+            <button>
+              Connect &nbsp<ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+          </div>
+          <div id="body-5-2">
+            <div>
+              <h3>200</h3>
+              <p>connecting</p>
+            </div>
+
+            <div>
+              <h3>1.9M</h3>
+              <p>followers</p>
+            </div>
+          </div>
+
+          <div id="body-5-3">
+            <p>
+              <ion-icon name="link-outline"></ion-icon>&nbsp
+              <a href="https://www.linkedin.com/in/billgates">
+                linkedin.com/in/billgates
+              </a>
+            </p>
+            <p>
+              <ion-icon name="globe-outline"></ion-icon>&nbsp
+              <a href="https://en.wikipedia.org/wiki/Bill_Gates">
+                billgates.com
+              </a>
+            </p>
+          </div>
+
+          <div id="body-5-4">
+            <p>
+              <ion-icon name="exit-outline"></ion-icon>&nbsp
+              <a> Export page as PDF </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="main-content">
+        
+        <div id="body-1">
+            <div class="container">
+                <div class="containers-header">
+                    <h1>Posts</h1>
+                    <div>
+                        <a href=""><img src="./img/Arrow.svg" alt="button"></a>
+                        <a href=""><img src="./img/Arrow.svg" alt="button"></a>
+                    </div>
+                </div>
+
+                <div class="containers-main">
+                    <div id="content-1">
+                        <a href="">
+                            <img src="./img/article1.jpg" alt="photo">
+                            <div class="text"> 3 Myths That Confuse Top-Managers</div>
+                            <div class="additional-text">February 19, 2016</div>
+                        </a>
+                    </div>
+                    <div id="content-2">
+                        <a href="">
+                            <img src="./img/article2.jpg" alt="photo">
+                            <div class="text">How much do we spend on hot drinks</div>
+                            <div class="additional-text"> February 19, 2016</div>
+                        </a>
+                    </div>
+                    <div id="content-3">
+                        <a href="">
+                            <img src="./img/article3.jpg" alt="photo">
+                            <div class="text">Good news you might have noticed</div>
+                            <div class="additional-text"> February 19, 2016</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-2">
+            <div class="container">
+                <div class="containers-header">
+                    <h1>Background</h1>
+                </div>  
+                <div class="containers-info">
+                    <div id="info-1">
+                        <h2><img src="./img/mark-icon-1.svg" alt="1" id="img-info">Summary</h2>
+                        <div class=" info-1 p"> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eos laborum sed?
+                        Corrupti itaque ab quibusdam cupiditate praesentium vero autem a? Quia dolorem 
+                        rem tenetur modi nostrum laborum tempore voluptatem.</p></div>
+                    </div>
+                    <div id="info-2">
+                        <h2><img src="./img/mark-icon-2.svg" alt="1" id="img-info">Experience</h2>
+                        
+                        <div class="grid_info"> 
+                            <div class="el1">
+                                <ul>
+                                    <li>
+                                        <h6>2000 - PRESENT</h6>
+                                        <p>Co-founder, Chairman</p> 
+                                        <a href="">Microsoft</a> 
+                                    </li>
+                                    
+                                    <li>
+                                        <h6>1992 - 1999</h6>
+                                        <p>Senior Developer</p>
+                                        <a href="">Youtube</a>
+                                    </li>
+                            
+                                </ul>
+                            </div>
+                            <div class="img1"><img width="140" src="./img/logo-microsoft.png" alt="1" id="grid-img-info"></div>
+                            <div class="img2"><img width="110" src="./img/logo-youtube.png" alt="1" id="grid-img-info"></div>
+                        </div>
+
+
+                    </div>
+                    <div id="info-3">
+                        <h2><img src="./img/mark-icon-3.svg" alt="1" id="img-info">Education</h2>
+
+
+                        <ul>
+                            <li>
+                                <h6>1973 - 1975</h6>
+                                <p>Harvard University</p> 
+                                <a href="">BS Computer Science</a> 
+                            </li>
+                            
+                            <li>
+                                <h6>1960 - 1972</h6>
+                                <p>Lakeside School, Seattle</p>
+                                
+                            </li>
+                    
+                        </ul>
+
+
+                    </div>
+                    <div id="info-4">
+                        <h2><img src="./img/mark-icon-4.svg" alt="1" id="img-info">Skills</h2>
+
+                        <div class="number-info">
+                            <div class="row-info">
+                                <p id="p1">74</p> 
+                                <p>Social Media Marketing</p>
+                            </div>
+                            <div class="image-info">
+                                <img width="50" src="./img/avatar.jpg" alt="">
+                                <img width="50" src="./img/avatar2.jpg" alt="">
+                                <img width="50" src="./img/avatar3.jpg" alt="">
+                                <h6>71+</h6>
+                            </div>
+                        </div>
+
+                        <div class="number-info">
+                            <div class="row-info">
+                                <div><p id="p1">67</p></div>
+                                <div><p>Web Development</p></div>
+                            </div>
+                            <div class="image-info">
+                                <img width="50" src="./img/avatar2.jpg" alt="1">
+                                <img width="50" src="./img/avatar3.jpg" alt="1">
+                                <img width="50" src="./img/avatar.jpg" alt="1">
+                                <h6>17+</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="info-5">
+                        <h2><img src="./img/mark-icon-5.svg" alt="1" id="img-info">Interests</h2>
+                        <div class="info-5-1">
+                            <p>Wireless Industry</p>
+                            <p>Photography</p>
+                            <p>Web Design</p>
+                            <p>Technology</p>
+                            
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="body-3">
+            <div class="container">
+                <div class="containers-header">
+                    <h1>Recomendations</h1>
+                    <div>
+                        <a href=""><img src="./img/Arrow.svg" alt="button"></a>
+                        <a href=""><img src="./img/Arrow.svg" alt="button"></a>
+                    </div>
+                </div>
+
+                <div class="containers-main-grid">
+                    <label id="rec-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem hic voluptate aspernatur quia quae tempora fugiat fuga autem officiis officia sit, minima et optio nostrum earum, assumenda delectus perspiciatis molestiae? </label>
+                    <label id="rec-2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, in illum? Incidunt architecto reprehenderit a ex. Rem excepturi facilis dignissimos. Nemo dolor deleniti corrupti illo a eaque rerum. Suscipit, inventore.</label>
+                    <label id="rec-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, amet provident? Voluptatibus aliquam aut dicta ex incidunt at recusandae non vero ea sed? Expedita tempora eligendi corporis, dolorem voluptate sapiente!</label>
+
+                    <div class="grid-content">
+                        <img src="./img/avatar.jpg" class="avatar">
+                        <div class="text">Steve Jobs</div>
+                        <div class="additional-text">Apple</div>
+                    </div>
+                    <div class="grid-content">
+                        <img src="./img/avatar2.jpg" class="avatar">
+                        <div class="text">Mark Zuckerberg</div>
+                        <div class="additional-text">Facebook</div>
+                    </div>
+                    <div class="grid-content">
+                        <img src="./img/avatar3.jpg" class="avatar">
+                        <div class="text">Jeffrey Bezos</div>
+                        <div class="additional-text">Amazon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-4"></div>
+
+        </div>
+
+        <div id="body-6">
+          <p>PEOPLE ALSO VIEWED</p>
+
+          <div id="body-6-1">
+            <img src="img/avatar.jpg" />
+            <div>
+              <h3>Sergey Brin</h3>
+              <p>Google</p>
+            </div>
+          </div>
+
+          <div id="body-6-2">
+            <img src="img/avatar2.jpg" />
+            <div>
+              <h3>Jeffrey Bezos</h3>
+              <p>Amazon</p>
+            </div>
+          </div>
+
+          <div id="body-6-3">
+            <img src="img/avatar3.jpg" />
+            <div>
+              <h3>Steve Jobs</h3>
+              <p>Apple</p>
+            </div>
+          </div>
+
+          <p>MORE INFLUENCERS</p>
+
+          <div id="body-6-4">
+            <div>
+              <button>
+                <ion-icon name="chevron-back-outline"></ion-icon>
+              </button>
+
+              <img src="img/avatar3.jpg" />
+
+              <button>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+            <h2>Steve Jobs</h2>
+            <p>Apple</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="divfooter">
+                    <p>Linkedln Corporation Ⓒ 2014</p>
+        </div>
+
+    </footer>
+
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+
+</html>
